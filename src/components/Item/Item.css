@@ -1,0 +1,82 @@
+/* Contenedor general (si los estás mostrando en una lista o grid) */
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 0;
+}
+
+/* Estilo de cada producto */
+.productItem {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 320px;            /* Más ancho que antes */
+    margin: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.productItem:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.8);
+    border-color: #555;
+}
+
+/* Imagen */
+.productItem img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 14px;
+}
+
+/* Título */
+.productTitle {
+    font-size: 1.4rem;
+    color: #00bfff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Texto general */
+.productItem p {
+    color: #ccc;
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+/* Precio */
+.productItem p:first-of-type {
+    font-weight: bold;
+    color: #00ffb3;
+}
+
+/* Descripción */
+.productItem p:last-of-type {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Botones */
+.productItem button {
+    margin-top: 12px;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.productItem button:hover {
+    background-color: #0099cc;
+    transform: scale(1.05);
+}
