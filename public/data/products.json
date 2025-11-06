@@ -1,42 +1,42 @@
 [
     {
     "id": "1",
-    "nombre": "Call of Duty: Modern Warfare II",
-    "precio": 69.99,
-    "categoria": "xbox",
-    "descripcion": "Shooter en primera persona con modos de campaña, multijugador y cooperativo, ambientado en operaciones tácticas modernas.",
+    "name": "Call of Duty: Modern Warfare II",
+    "price": 69.99,
+    "category": "xbox",
+    "description": "Shooter en primera persona con modos de campaña, multijugador y cooperativo, ambientado en operaciones tácticas modernas.",
     "imagen": "/images/codmw2 xbox.webp"
     },
     {
     "id": "2",
-    "nombre": "Dragon Ball FighterZ",
-    "precio": 49.99,
-    "categoria": "nintendoSwitch",
-    "descripcion": "Juego de lucha en 2D basado en Dragon Ball, con combates rápidos y visuales fieles al anime.",
+    "name": "Dragon Ball FighterZ",
+    "price": 49.99,
+    "category": "nintendoSwitch",
+    "description": "Juego de lucha en 2D basado en Dragon Ball, con combates rápidos y visuales fieles al anime.",
     "imagen": "/images/dragonBallFighterZNintendo.webp"
     },
     {
     "id": "3",
-    "nombre": "Nintendo Switch",
-    "precio": 299.99,
-    "categoria": "consola",
-    "descripcion": "Consola híbrida que combina juego portátil y de sobremesa, con una amplia biblioteca de juegos exclusivos.",
+    "name": "Nintendo Switch",
+    "price": 299.99,
+    "category": "consola",
+    "description": "Consola híbrida que combina juego portátil y de sobremesa, con una amplia biblioteca de juegos exclusivos.",
     "imagen": "/images/nintendo switch.jpg"
     },
     {
     "id": "4",
-    "nombre": "Super Mario Odyssey",
-    "precio": 59.99,
-    "categoria": "nintendoSwitch",
-    "descripcion": "Aventura de plataformas 3D en la que Mario explora mundos abiertos con su gorra mágica Cappy.",
+    "name": "Super Mario Odyssey",
+    "price": 59.99,
+    "category": "nintendoSwitch",
+    "description": "Aventura de plataformas 3D en la que Mario explora mundos abiertos con su gorra mágica Cappy.",
     "imagen": "/images/SuperMarioOdiseyNintendo.jpg"
     },
     {
     "id": "5",
-    "nombre": "The Last of Us Part II",
-    "precio": 69.99,
-    "categoria": "playStation 5",
-    "descripcion": "Juego de acción y supervivencia con una historia intensa y cinematográfica ambientada en un mundo postapocalíptico.",
+    "name": "The Last of Us Part II",
+    "price": 69.99,
+    "category": "playStation 5",
+    "description": "Juego de acción y supervivencia con una historia intensa y cinematográfica ambientada en un mundo postapocalíptico.",
     "imagen": "/images/tlou2.JPG"
     }
 ]

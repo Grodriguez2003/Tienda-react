@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom"
 import { Nav } from "../Nav/Nav"
 
 
 export const Header = () => {
     return (
         <header>
-            <h2>Logo</h2>
+            <Link to={"/"}>LOGO</Link>
             <Nav/>
         </header>
     )
