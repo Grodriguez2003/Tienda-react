@@ -1,82 +1,79 @@
-/* Contenedor general (si los estás mostrando en una lista o grid) */
-.productContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-    padding: 40px 0;
+/* Item.css */
+
+/* Fondo oscuro general y tipografía */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: "Inter", "Segoe UI", sans-serif;
 }
 
-/* Estilo de cada producto */
-.productItem {
+/* Contenedor del producto */
+.product-item {
     background-color: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    text-align: center;
-    width: 320px;            /* Más ancho que antes */
-    margin: 16px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.productItem:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.8);
-    border-color: #555;
-}
-
-/* Imagen */
-.productItem img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border: 1px solid #2a2a2a;
     border-radius: 12px;
-    margin-bottom: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 280px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
 }
 
-/* Título */
-.productTitle {
-    font-size: 1.4rem;
-    color: #00bfff;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+/* Efecto hover */
+.product-item:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
 }
 
-/* Texto general */
-.productItem p {
-    color: #ccc;
-    font-size: 1rem;
-    margin: 6px 0;
+/* Imagen del producto */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Título del producto */
+.product-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 
 /* Precio */
-.productItem p:first-of-type {
+.product-item p:nth-of-type(1) {
+    color: #00e676;
     font-weight: bold;
-    color: #00ffb3;
+    margin-bottom: 0.5rem;
 }
 
 /* Descripción */
-.productItem p:last-of-type {
-    font-style: italic;
-    color: #aaa;
+.product-item p:nth-of-type(2) {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
 }
 
-/* Botones */
-.productItem button {
-    margin-top: 12px;
-    background-color: #00bfff;
-    color: #fff;
+/* Botones u otros elementos dentro de children */
+.product-item button {
+    background-color: #00e676;
+    color: #121212;
     border: none;
-    border-radius: 8px;
-    padding: 10px 16px;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
-.productItem button:hover {
-    background-color: #0099cc;
-    transform: scale(1.05);
+.product-item button:hover {
+    background-color: #00c853;
 }
