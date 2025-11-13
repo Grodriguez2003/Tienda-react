@@ -7,24 +7,35 @@ import { ItemListContainer } from "./components/ItemListContainer/ItemListContai
 import { CartProvider } from "./context/CartContext/CartProvider";
 import { Cart } from "./components/Cart/Cart";
 import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer";
+import { MainLayout } from "./context/layouts/MainLayout";
+import { AdminLayout } from "./context/layouts/AdminLayout";
+import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida";
+import { Login } from "./components/login/login";
 
 
 function App() {
 
-  return (  
+  return (
     <>
       <BrowserRouter>
         <CartProvider>
           <div>
-          <Header />
-          <Routes>
-            <Route path="/" element={<ItemListContainer titulo={"Bienvenidos a gamespot"} />} />
-            <Route path="/category/:category" element={<ItemListContainer titulo={"Bienvenidos a gamespot"} />} />
-            <Route path="/detail/:id" element={<ItemDetailContainer />} />
-            <Route path="/carrito" element={<Cart/>}/>
-            <Route path="/admin" element={<ProductFormContainer />}/>
-          </Routes>
-          <Footer />
+            <Routes>
+              <Route element={<MainLayout />}>
+                <Route path="/" element={<ItemListContainer titulo={"Bienvenidos a gamespot"} />} />
+                <Route path="/category/:category" element={<ItemListContainer titulo={"Bienvenidos a gamespot"} />} />
+                <Route path="/detail/:id" element={<ItemDetailContainer />} />
+                <Route path="/carrito" element={<Cart />} />
+              </Route>
+              <Route path="/admin" element={<AdminLayout/>}>
+                <Route index element={<Login/>}/>
+
+                <Route path="alta-productos" element={<RutaProtegida>
+                  <ProductFormContainer/>
+                </RutaProtegida>}/>
+              </Route>
+            </Routes>
+            <Footer />
           </div>
         </CartProvider>
       </BrowserRouter>
