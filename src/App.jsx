@@ -10,7 +10,7 @@ import { ProductFormContainer } from "./components/adminComponents/ProductFormCo
 import { MainLayout } from "./context/layouts/MainLayout";
 import { AdminLayout } from "./context/layouts/AdminLayout";
 import { RutaProtegida } from "./components/RutaProtegida/RutaProtegida";
-import { Login } from "./components/login/login";
+import { Login } from "./components/Login/Login";
 
 
 function App() {
